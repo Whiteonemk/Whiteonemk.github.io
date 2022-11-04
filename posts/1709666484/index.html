@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Android开发 | White</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="Android开发 | White">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="Eclipse基本概述：工作区（workspace） 工作区是一个目录，程序和程序所需要用到的资源都在workspace里，中间缓存文件也存在工作区中。安装的时候选择好工作区 项目（Project） 为一个需求所服务的代码文件，一个workspace 可以拥有个项目，而你的代码必须有归属于某个项目的，不能单独存在。 Eclipse创建Java文件●创建项目 1、File-New-Project 2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="eclipse使用">
+<meta property="og:url" content="http://example.com/posts/2033113913/index.html">
+<meta property="og:site_name" content="White">
+<meta property="og:description" content="Eclipse基本概述：工作区（workspace） 工作区是一个目录，程序和程序所需要用到的资源都在workspace里，中间缓存文件也存在工作区中。安装的时候选择好工作区 项目（Project） 为一个需求所服务的代码文件，一个workspace 可以拥有个项目，而你的代码必须有归属于某个项目的，不能单独存在。 Eclipse创建Java文件●创建项目 1、File-New-Project 2">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pic1.zhimg.com/80/v2-5f7542885bf672306513f76b36babbac_720w.webp">
+<meta property="og:image" content="https://pic4.zhimg.com/80/v2-8a456e40f9fd2fbc81dd444124a94063_720w.webp">
+<meta property="og:image" content="https://pic1.zhimg.com/80/v2-742172fd0c95bc83a92596c6d2752850_720w.webp">
+<meta property="og:image" content="https://pic4.zhimg.com/80/v2-9b2d8835eb993f16b8d2d4c9914fcd67_720w.webp">
+<meta property="og:image" content="https://pic2.zhimg.com/80/v2-963c44c01102427de421f8338e352bc1_720w.webp">
+<meta property="og:image" content="https://pic3.zhimg.com/80/v2-03f1d047b216531a122aeeb83384eb56_720w.webp">
+<meta property="og:image" content="https://pic2.zhimg.com/80/v2-b645d4d0c67093b31da95c6c95ee2cc1_720w.webp">
+<meta property="og:image" content="https://pic4.zhimg.com/80/v2-d440e511d8c8a559298dc0ad39aae053_720w.webp">
+<meta property="og:image" content="https://pic3.zhimg.com/80/v2-3ecbcec750a73f9f8507448051241fca_720w.webp">
+<meta property="og:image" content="https://pic4.zhimg.com/80/v2-75c1aeb43cab77cce1115784c85b92ef_720w.webp">
+<meta property="og:image" content="https://pic2.zhimg.com/80/v2-127f196cd27f1070581b2a1690d0dee5_720w.webp">
+<meta property="og:image" content="https://pic4.zhimg.com/80/v2-10d4e44efdcfa87f695c99dd026b34ef_720w.webp">
+<meta property="og:image" content="https://pic4.zhimg.com/80/v2-9e39aa918da177ad431daa7d9f59b497_720w.webp">
+<meta property="og:image" content="https://pic2.zhimg.com/80/v2-5322c905363234a4ad423851ea09cd49_720w.webp">
+<meta property="og:image" content="https://pic3.zhimg.com/80/v2-3543b0b47307f840cb1c35a7f741ffba_720w.webp">
+<meta property="og:image" content="https://pic3.zhimg.com/80/v2-87cc4b232cf8c27cd00d4e0791ddb76a_720w.webp">
+<meta property="og:image" content="https://pic4.zhimg.com/80/v2-4215994e3d134ab0f40f1d1cdfe3159b_720w.webp">
+<meta property="og:image" content="https://pic4.zhimg.com/80/v2-0464915634abb36466ab97d1560c8387_720w.webp">
+<meta property="og:image" content="https://pic1.zhimg.com/80/v2-288e6bed59c263100e50ced4d8d3a8a0_720w.webp">
+<meta property="og:image" content="https://pic2.zhimg.com/80/v2-014e753edd47193c32b08d8119d54e1d_720w.webp">
+<meta property="og:image" content="https://pic4.zhimg.com/80/v2-ea70bd12c7a4dbe4446eccebf03bbbf7_720w.webp">
+<meta property="og:image" content="https://pic3.zhimg.com/80/v2-607c456ccabb4a0be557af00246e8eae_720w.webp">
+<meta property="og:image" content="https://pic1.zhimg.com/80/v2-29158bb7bc736458318dfa2af05842b0_720w.webp">
+<meta property="og:image" content="https://pic1.zhimg.com/80/v2-4037eaa05f7152e5b625044c590dab7c_720w.webp">
+<meta property="og:image" content="https://pic1.zhimg.com/80/v2-a254d21bbd96f5d6679c8768ca804ae0_720w.webp">
+<meta property="og:image" content="https://pic2.zhimg.com/80/v2-ad070ab2f8c3a2dc07c1cf5dcc5a6da5_720w.webp">
+<meta property="og:image" content="https://pic3.zhimg.com/80/v2-611dd8c99749cabb134387a2c7cef602_720w.webp">
+<meta property="og:image" content="https://pic2.zhimg.com/80/v2-db1cf59af1ad1ac6948ad656bbb1262d_720w.webp">
+<meta property="article:published_time" content="2022-11-04T07:28:34.000Z">
+<meta property="article:modified_time" content="2022-11-04T07:33:00.435Z">
+<meta property="article:author" content="White">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pic1.zhimg.com/80/v2-5f7542885bf672306513f76b36babbac_720w.webp">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>White</span>
+</div>
+
+<div class="icon">
+    
+        
+            <a title="rss"
+               href="/atom.xml"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-rss"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="github"
+               href="https://github.com/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="facebook"
+               href="https://www.facebook.com/faker.tops"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-facebook"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+    
+        
+            <a title="instagram"
+               href="https://www.facebook.com/faker.tops"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-instagram"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="reddit"
+               href="https://www.reddit.com/user/yelog/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-reddit"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="weibo"
+               href="http://weibo.com/u/2307534817"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="jianshu"
+               href="https://www.jianshu.com/u/ff56736de7cf"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-jianshu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="zhihu"
+               href="https://www.zhihu.com/people/jaytp/activities"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-zhihu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="oschina"
+               href="https://my.oschina.net/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-oschina"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="email"
+               href="mailto:jaytp@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=872336115&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="kugou"
+               href="https://www.kugou.com/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-kugou"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="neteasemusic"
+               href="https://music.163.com/#/user/home?id=88151013"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-neteasemusic"></use>
+                    </svg>
+                
+            </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+                <small>(4)</small>
+            
+        </div>
+    </li>
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">About</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">Friends</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="4">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        
+        <a  class="All "
+           href="/posts/1709666484/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Android开发">Android开发</span>
+            <span class="post-date" title="2022-11-04 15:34:12">2022/11/04</span>
+        </a>
+        
+        
+        <a  class="All "
+           href="/posts/2033113913/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="eclipse使用">eclipse使用</span>
+            <span class="post-date" title="2022-11-04 15:28:34">2022/11/04</span>
+        </a>
+        
+        
+        <a  class="All "
+           href="/posts/871731478/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="hexo常用命令">hexo常用命令</span>
+            <span class="post-date" title="2022-11-02 23:04:50">2022/11/02</span>
+        </a>
+        
+        
+        <a  class="All "
+           href="/posts/3690580215/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="1111">1111</span>
+            <span class="post-date" title="2022-11-02 21:34:58">2022/11/02</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-Android开发" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">Android开发</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        
+    </div>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2022-11-04 15:34:51'>2022-11-04 15:34</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#APK%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84"><span class="toc-text">APK文件结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#APP%E7%A8%8B%E5%BA%8F%E6%89%93%E5%8C%85%E4%B8%8E%E5%AE%89%E8%A3%85%E7%9A%84%E6%B5%81%E7%A8%8B%E5%9B%BE%EF%BC%9A"><span class="toc-text">APP程序打包与安装的流程图：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#APP%E7%9A%84%E5%AE%89%E8%A3%85%E8%BF%87%E7%A8%8B%EF%BC%9A"><span class="toc-text">APP的安装过程：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E6%9C%AF%E8%AF%AD%EF%BC%9A"><span class="toc-text">一些术语：</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#apk%E6%89%93%E5%8C%85%E6%B5%81%E7%A8%8B"><span class="toc-text">apk打包流程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#APK%E5%AE%89%E8%A3%85"><span class="toc-text">APK安装</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6"><span class="toc-text">四大组件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Activity"><span class="toc-text">Activity</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-text">生命周期</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%9B%9B%E7%A7%8D%E7%8A%B6%E6%80%81Running%E7%8A%B6%E6%80%81%EF%BC%9A"><span class="toc-text">四种状态Running状态：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%83%E4%B8%AA%E6%96%B9%E6%B3%95"><span class="toc-text">七个方法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%A4%E4%B8%AA%E5%BC%82%E5%B8%B8"><span class="toc-text">两个异常</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E6%95%B0%E4%BC%A0%E9%80%92"><span class="toc-text">参数传递</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#service"><span class="toc-text">service</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8%E6%96%B9%E5%BC%8F"><span class="toc-text">启动方式</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ContentProvider"><span class="toc-text">ContentProvider</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5"><span class="toc-text">概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%8E%9F%E7%90%86%EF%BC%9A"><span class="toc-text">使用原理：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#uri%E7%BB%9F%E4%B8%80%E8%B5%84%E6%BA%90%E6%A0%87%E8%AF%86%E7%AC%A6"><span class="toc-text">uri统一资源标识符</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B9%BF%E6%92%AD%E6%8E%A5%E6%94%B6%E8%80%85BroadcastReceiver"><span class="toc-text">广播接收者BroadcastReceiver</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#context"><span class="toc-text">context</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#intent"><span class="toc-text">intent</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Intent%E4%BD%9C%E7%94%A8"><span class="toc-text">Intent作用:</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%87%E5%AE%9A%E5%BD%93%E5%89%8D%E7%BB%84%E4%BB%B6%E8%A6%81%E5%AE%8C%E6%88%90%E7%9A%84%E5%8A%A8%E4%BD%9C"><span class="toc-text">指定当前组件要完成的动作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E9%9A%90%E5%BC%8F%E6%84%8F%E5%9B%BE"><span class="toc-text">1.隐式意图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%98%BE%E5%BC%8F%E6%84%8F%E5%9B%BE"><span class="toc-text">显式意图</span></a></li></ol></li></ol></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="APK文件结构"><a href="#APK文件结构" class="headerlink" title="APK文件结构"></a>APK文件结构</h1><ul>
+<li><p><strong>src目录：</strong>包含项目中所有的.java源文件，默认情况下，它包括一个 MainActivity.java源文件对应的活动类，当应用程序通过应用图标启动时，将运行它。</p>
+</li>
+<li><p><strong>gen目录：</strong>只关注R.java文件，我们平时使用资源也是通过R文件来调用的，不能更改</p>
+</li>
+<li><p><strong>bin目录：</strong> 这个文件夹包含Android由APT构建的.apk包文件，以及运行Android应用程序所需要的其他所有东西。</p>
+</li>
+<li><p><strong>assets目录：</strong>存放资源，而且不会再R.java文件下生成资源id，需要使用AssetsManager类进行访问</p>
+<p>assets   静态资源   可创建子文件夹</p>
+</li>
+<li><p><strong>libs目录：</strong>存放一些jar包，比如v4,v7的兼容包，又或者是第三方的一些包</p>
+<p>so文件利用底层c，c##代码实现的</p>
+</li>
+<li><p><strong>res资源目录：</strong>存放资源的，drawable：存放图片资源；layout：存放界面的布局文件，都是XML文件； values：包含使用XML格式的参数的描述文件，如string.xml字符串，color.xml颜色，style.xml风格样式等</p>
+<p>res     程序资源   存放应用程序的资源   对所存目录有一定规定和要求   其内资源会生成对应资源id    和代码有关系</p>
+</li>
+<li><p><strong>AndroidManifest.xml配置文件：</strong>系统的控制文件，用于告诉Android系统App所包含的一些基本信息，比如组件，资源，以及需要的权限，以及兼容的最低版本的SDK等    一般不要更改</p>
+</li>
+<li><p><strong>classes.dex</strong> 可能不只有一个，android所有代码都在此，通过反编译dex2jar转化成jar包，再通过jd.gui查看其代码</p>
+</li>
+<li><p><strong>respouce.arsc</strong>源码  资源索引表，用来描述具有id值的资源的配置信息</p>
+</li>
+</ul>
+<p>可以先记这几个</p>
+<p><img src="/.com//blog\blog-demo\source_posts\f1.png"></p>
+<p><img src="/.com//Users\white\AppData\Roaming\Typora\typora-user-images\image-20221028143317483.png" alt="image-20221028143317483"></p>
+<p><img src="/.com//blog\blog-demo\source_posts\f2.png"></p>
+<p><img src="/.com//Users\white\AppData\Roaming\Typora\typora-user-images\image-20221028143547961.png" alt="image-20221028143547961"></p>
+<p><img src="/.com//blog\blog-demo\source_posts\f3.png"></p>
+<p><img src="/.com//Users\white\AppData\Roaming\Typora\typora-user-images\image-20221028143643093.png" alt="image-20221028143643093"></p>
+<h1 id="APP程序打包与安装的流程图："><a href="#APP程序打包与安装的流程图：" class="headerlink" title="APP程序打包与安装的流程图："></a>APP程序打包与安装的流程图：</h1><p><img src="/.com//Users\white\AppData\Roaming\Typora\typora-user-images\image-20221027204212460.png" alt="image-20221027204212460"></p>
+<h1 id="APP的安装过程："><a href="#APP的安装过程：" class="headerlink" title="APP的安装过程："></a>APP的安装过程：</h1><p><img src="/.com//Users\white\AppData\Roaming\Typora\typora-user-images\image-20221027204337048.png" alt="image-20221027204337048"></p>
+<h1 id="一些术语："><a href="#一些术语：" class="headerlink" title="一些术语："></a>一些术语：</h1><ol>
+<li><strong>Dalvik：</strong> Android特有的虚拟机,和JVM不同,Dalvik虚拟机非常适合在移动终端上使用!</li>
+<li><strong>AVD：</strong> (android virtual machine):安卓虚拟设备,就是安卓的模拟器</li>
+<li><strong>ADT：</strong> (android development tools)安卓开发工具</li>
+<li><strong>SDK：</strong>(software development kit)软件开发工具包,就是安卓系统,平台架构等的工具集合,如adb.exe</li>
+<li><strong>DDMS：</strong>(dalvik debug monitor service)安卓调试工具</li>
+<li><strong>adb：</strong>安卓调试桥,在sdk的platform-tools目录下,功能很多,命令行必备</li>
+<li><strong>DX工具：</strong>将.class转换成.dex文件</li>
+<li><strong>AAPT：</strong>(android asset packing tool),安卓资源打包工具</li>
+<li><strong>R.java文件：</strong>由aapt工具根据App中的资源文件自动生成,可以理解为资源字典</li>
+<li><strong>AndroidManifest.xml：</strong>app包名 + 组件声明 + 程序兼容的最低版本 + 所需权限等程序的配置文件</li>
+</ol>
+<h1 id="apk打包流程"><a href="#apk打包流程" class="headerlink" title="apk打包流程"></a>apk打包流程</h1><p><img src="/.com//Users\white\AppData\Roaming\Typora\typora-user-images\image-20221028163140559.png" alt="image-20221028163140559"></p>
+<p><img src="/.com//Users\white\AppData\Roaming\Typora\typora-user-images\image-20221028164539461.png" alt="image-20221028164539461"></p>
+<h1 id="APK安装"><a href="#APK安装" class="headerlink" title="APK安装"></a>APK安装</h1><p>&#x2F;date&#x2F;app&#x2F;—创建一个文件夹—</p>
+<p>资源管理器解析</p>
+<p>拷贝</p>
+<p>dex进行优化</p>
+<p>保存在date  dalvik-cache</p>
+<p>四大组件解析</p>
+<p><img src="/.com//Users\white\AppData\Roaming\Typora\typora-user-images\image-20221028194141805.png" alt="image-20221028194141805"></p>
+<p>解析xml文件夹—-在&#x2F;date&#x2F;date&#x2F;中创建数据目录</p>
+<p>安装包在&#x2F;date&#x2F;app&#x2F;中</p>
+<p>3.对dex文件（源码）进行优化后保存在&#x2F;date&#x2F;dalvil-cache</p>
+<p>apk文件中有AndroidManifest.xml文件解析出四大组件信息</p>
+<p>参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/mysimplelove/article/details/93619361">Android中APK安装流程解析_mysimplelove的博客-CSDN博客_android apk安装过程解析</a></p>
+<p>apk安装的四大步骤：</p>
+<p>（1）拷贝apk到指定的目录：默认情况下，用户安装的apk首先会拷贝到&#x2F;data&#x2F;app下，用户有访问&#x2F;data&#x2F;app目录的权限，但系统出厂的apk文件会被放到&#x2F;system分区下，包括&#x2F;system&#x2F;app，&#x2F;system&#x2F;vendor&#x2F;app，以及&#x2F;system&#x2F;priv-app等，该分区需要root权限的用户才能访问。<br>（2）加载apk、拷贝文件、创建应用的数据目录：为了加快APP的启动速度，apk在安装的时候，会首先将APP的可执行文件（dex）拷贝到&#x2F;data&#x2F;dalvik-cache目录下，缓存起来。再在&#x2F;data&#x2F;data&#x2F;目录下创建应用程序的数据目录（以应用包名命令），用来存放应用的数据库、xml文件、cache、二进制的so动态库等。<br>（3）解析apk的AndroidManifest.xml文件：在安装apk的过程中，会解析apk的AndroidManifest.xml文件，将apk的权限、应用包名、apk的安装位置、版本、userID等重要信息保存在&#x2F;data&#x2F;system&#x2F;packages.xml文件中。这些操作都是在PackageManagerService中完成<br>的。<br>（4）显示icon图标：应用程序经过PMS中的逻辑处理后，相当于已经注册好了，如果想要在Android桌面上看到icon图标，则需要Launcher将系统中已经安装的程序展现在桌面上。</p>
+<p>接下来介绍一下APK安装涉及到的几个常用目录：</p>
+<p>1.system&#x2F;app ： 系统自带的应用程序，获得root权限才能删除。</p>
+<p>2.data&#x2F;app ： 用户程序安装目录，安装时会把apk文件复制到此目录下。</p>
+<p>3.data&#x2F;data ： 存放应用程序的数据。</p>
+<p>4.data&#x2F;dalvik-cache ： 将apk中的dex文件安装到该目录下（dex文件是dalvik虚拟机的可执行文件，大小约为原始apk的四分之一）。</p>
+<p>还有APK安装的预备知识点也说一下吧：</p>
+<p>（1）PackageManagerService是由SystemServer启动，PMS负责应用的安装、卸载、权限检查等工作；</p>
+<p>（2）在&#x2F;system&#x2F;app和&#x2F;data&#x2F;app目录下的apk文件，PMS在启动过程中，都会扫描安装；</p>
+<p>（3）每次开机时，PMS都会在构造函数中对指定目录下的apk进行扫描，没有安装的apk就会触发安装；</p>
+<h1 id="四大组件"><a href="#四大组件" class="headerlink" title="四大组件"></a>四大组件</h1><h1 id="Activity"><a href="#Activity" class="headerlink" title="Activity"></a>Activity</h1><h2 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h2><h4 id="四种状态Running状态："><a href="#四种状态Running状态：" class="headerlink" title="四种状态Running状态："></a>四种状态Running状态：</h4><p>处于栈的最顶端，此时它处于可见并可和用户交互的激活状态。</p>
+<p>Paused状态：</p>
+<p>当Activity被另一个透明或者Dialog样式的Activity覆盖时的状态。它仍然可见，但失去了焦点，故不可与用户交互。</p>
+<p>Stopped状态：当Activity完全不可见，处于后台时，但仍保留着当前状态和成员信息</p>
+<p>Killed状态：当前界面被销毁，等待被系统回收</p>
+<h4 id="七个方法"><a href="#七个方法" class="headerlink" title="七个方法"></a>七个方法</h4><p><strong>onCreate（）</strong>：在Activity创建时调用。一般用来做一些初始化操作，如初始化布局setContentLayout()</p>
+<p><strong>onStart（）</strong>：在Activity即将显示界面时调用，但用户无法操作。一般也用于做一些初始化操作，但对于Activity而言，onCreate只执行一次，但onStart可执行多次。</p>
+<p><strong>onResume（）</strong>：在Activity获取焦点开始与用户交互时调用，此时Activity处于运行状态，位于栈顶。一般用于数据恢复、开启动画等</p>
+<p>onPause（）：在当前Activity被其他Activity覆盖部分或锁屏时调用，此时Activity处于暂停状态，仍然可见，但失去焦点，不能与用户交互。一般用于关闭动画，注销广播等。并应进行状态保存与数据存储，但不适合做耗时操作。（为了让新的Activity尽快切换到前台）</p>
+<p><strong>onStop（）</strong>：在Activity对用户完全不可见时调用，此时Activity处于停止状态。此时进程优先级较低，当系统内存不足时，容易被杀死。一般用于进行资源回收。</p>
+<p><strong>onDestory（）</strong>：在Activity销毁时调用，常用于释放资源，Activity处于销毁状态后，将被清出内存。</p>
+<p><strong>onRestart（）</strong>：在Activity从停止状态再次启动时调用。onRestart一般是应用位于后台重新切换为前台调用，可用于进行数据刷新。</p>
+<p>其中onCreate() &amp; onDestory()、onStart() &amp; onStop()、onResume() &amp; onPause()成对出现。</p>
+<h3 id="两个异常"><a href="#两个异常" class="headerlink" title="两个异常"></a>两个异常</h3><p>更高优先级的进程需要内存，但系统内存不足处于暂停&#x2F;停止状态（低优先级）可能会被直接杀死onStop()-&gt;直接杀死进程（当前Activity）手动重启当前Activity-&gt;onCreate()-&gt;onStart()-&gt;onResume()-&gt;运行系统配置发生改变导致Activity意外销毁（如横竖屏切换、键盘事件等）Running-&gt;onSaveInstanceState()-&gt;onPause()-&gt;onStop()-&gt;onDestroy()-&gt;自动重启-&gt;onCreate()-&gt;onStart()-&gt;onRestoreInstanceState()-&gt;onResume()-&gt;Running在onSaveInstanceState（）保存Activity状态。适合保存一些非持久数据，如布局状态、成员变量的值等，持久数据适合在onPause（）与onStop（）中通过数据库、sharedpreference保存在onRestoreInstanceState（）&#x2F;onCreate()恢复Activity状态。</p>
+<p>补充：Activity各种实际场景下生命周期的变换</p>
+<p>（1）横竖屏切换、键盘事件等系统配置（自动重启）-&gt;onPause-&gt;onSaveInstanceState-&gt;onStop-&gt;onDestroy-&gt;onCreate-&gt;onStart-&gt;onRestoreInstanceState-&gt;onResume（2）横竖屏切换总结</p>
+<p>。。。这张图很清晰</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2022/png/33704216/1667056832117-90b53f40-1c35-4074-8b4e-04ba7ed9c9a1.png" alt="img"></p>
+<h2 id="参数传递"><a href="#参数传递" class="headerlink" title="参数传递"></a>参数传递</h2><ol>
+<li>通过Intent传递</li>
+</ol>
+<ul>
+<li>使用putExtra，可直接传递单一基本数据类型，或用Bundle封装多种数据类型再传递或者传递经Serializable&#x2F;Parcelable序列化对象</li>
+<li>使用startActivityForResult+setResult获取新Activity关闭后返回的数据<br>FirstActivity.java</li>
+</ul>
+<p>2.通过直接访问类的静态变量实现</p>
+<p>3.在Application（单例模式）设置应用的全局变量，可在程序中通过getApplication随时用</p>
+<p>4.使用EventBus插件传输数据量较大的数据订阅者</p>
+<p><strong>启动模式</strong></p>
+<p><strong>standard（标准模式）</strong></p>
+<p>该启动模式为默认模式。标准模式下，只要启动一次Activity，不管该实例是否存在，系统都会在当前任务栈中新建一个Activity实例并将该实例置于栈顶。</p>
+<p>该模式用于正常打开一个新的页面。使用最多，最普通。</p>
+<p><strong>singleTop（栈顶复用模式）</strong></p>
+<p>栈顶复用模式下，如果要启动的Activity已经处于栈的顶部，那么此时系统不会创建新的实例，而是复用栈顶的实例，同时它的onNewIntent()方法会被执行，我们可以通过Intent进行传值。否则会创建一个新的实例。</p>
+<p>SingleTop适用于接受推送通知的内容显示页面，防止每点击一次通知重新打开重复页面。</p>
+<p><strong>singleTask（栈内复用模式）</strong></p>
+<p>栈内复用模式下，首先会根据taskAffinity去寻找对应的任务栈：</p>
+<p>1、如果不存在指定的任务栈，系统会新建对应的任务栈，并新建一个Activity实例压入栈中。</p>
+<p>2、如果存在指定的任务栈，则会查找该任务栈中是否存在该Activity实例</p>
+<p>a、如果不存在该实例，则会在该任务栈中新建一个Activity实例压入栈中。</p>
+<p>b、如果存在该实例，则将任务栈中该Activity实例之上的所有Activity出栈并将所需Activity置于栈顶。</p>
+<p>SingleTask这种启动模式最常使用的就是一个APP的首页，因为一般为一个APP的第一个页面，且长时间保留在栈中，所以最适合设置singleTask启动模式来复用。</p>
+<p><strong>singleInstance（单例模式）</strong></p>
+<p>单例模式拥有singleTask（栈内复用）所有特性外且该Activity实例单独占用一个任务栈，具有全局唯一性。该模式启动的activity在系统中是单例的。如果已存在，则将它所在的任务栈调度到前台，进行复用。</p>
+<p>适用于与程序分开，具有独立功能的页面，如闹铃提醒，电话拨号等。</p>
+<p><strong>状态保存&amp;恢复</strong></p>
+<p><strong>需要保存&#x2F;恢复Activity状态的场景</strong></p>
+<p>当一些异常的场景导致某个activity变得”容易”被系统销毁（而不是被用户主动销毁（如点击BACK键））时，系统 会调用onSaveInstanceState方法来给用户提供一个存储现场的机会。</p>
+<p>这些场景包括：锁屏、点击home键、其他app进入前台、启动新的activity、（当前activity可能被销毁）横竖屏切换、由于内存不足app被杀死（一定被销毁）等。</p>
+<p>当该activity被系统销毁后重启回到前台时，系统会调用onRestoreInstanceState恢复Activity中数据。</p>
+<p><strong>如何保存&#x2F;恢复Activity状态</strong></p>
+<p>我们通常在系统调用onSaveInstanceState(Bundle savedInstanceState)中,我们可以在该方法中用一组存储在Bundle对象中的键值对集合保存该Activity当前状态&#x2F;需要恢复的数据。当我们重启该Activity时，上述的Bundle对象会作为实参传递给onCreate()与onRestoreInstanceState(Bundle savedInstanceState)方法, 我们可以从Bundle对象中取出保存的数据, 然后利用这些数据将activity恢复到被摧毁之前的</p>
+<h1 id="service"><a href="#service" class="headerlink" title="service"></a>service</h1><p><strong>后台</strong>运行<strong>组件</strong>，不能与用户交互</p>
+<p>创建—启动—销毁</p>
+<p>一个活动是<strong>Activity</strong>类的一个子类，如下所示：</p>
+<pre><code>public class MainActivity extends Activity &#123;
+
+&#125;
+</code></pre>
+<h2 id="启动方式"><a href="#启动方式" class="headerlink" title="启动方式"></a>启动方式</h2><p><strong>startService</strong>()<strong>与</strong><strong><strong>bindService</strong></strong>：****</p>
+<ul>
+<li>startService()方式启动服务，调用者与Service没有关联。只有当Service调用stopSelf()或调用者调用stopService()才能停止服务。</li>
+<li>bindService()方式启动服务，调用者与Servie绑定，可以与Service进行交互。当所有调用者退出后，Service会自动停止。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>回调</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>onStartCommand()</td>
+<td>其他组件(如活动)通过调用startService()来请求启动服务时，系统调用该方法。如果你实现该方法，你有责任在工作完成时通过stopSelf()或者stopService()方法来停止服务。</td>
+</tr>
+<tr>
+<td>onBind()</td>
+<td>当其他组件想要通过bindService()来绑定服务时，系统调用该方法。如果你实现该方法，你需要返回IBinder对象来提供一个接口，以便客户来与服务通信。你必须实现该方法，如果你不允许绑定，则直接返回null。</td>
+</tr>
+<tr>
+<td>onUnbind()</td>
+<td>当客户中断所有服务发布的特殊接口时，系统调用该方法。</td>
+</tr>
+<tr>
+<td>onCreate()</td>
+<td>当服务通过onStartCommand()和onBind()被第一次创建的时候，系统调用该方法。该调用要求执行一次性安装。</td>
+</tr>
+<tr>
+<td>onDestroy()</td>
+<td>当服务不再有用或者被销毁时，系统调用该方法。你的服务需要实现该方法来清理任何资源，如线程，已注册的监听器，接收器等。</td>
+</tr>
+</tbody></table>
+<p><strong>Service的生命周期根据启动方式分3种情况</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/20190918160106343.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI5OTY2MjAz,size_16,color_FFFFFF,t_70" alt="img"></p>
+<p>1.不可交互的后台服务</p>
+<p>Service的生命周期分别为onCreate、onStartCommand、onDestroy这三个。</p>
+<pre><code class="css">public class MyService extends Service &#123;
+
+    private final String TAG = &quot;MyService&quot;;
+
+    private MediaPlayer mediaPlayer;
+
+    private int startId;
+
+    public enum Control &#123;
+        PLAY, PAUSE, STOP
+    &#125;
+
+    public MyService() &#123;
+    &#125;
+
+    @Override
+    public void onCreate() &#123;
+        if (mediaPlayer == null) &#123;
+            mediaPlayer = MediaPlayer.create(this, R.raw.music);
+            mediaPlayer.setLooping(false);
+        &#125;
+        Log.e(TAG, &quot;onCreate&quot;);
+        super.onCreate();
+    &#125;
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) &#123;
+        this.startId = startId;
+        Log.e(TAG, &quot;onStartCommand---startId: &quot; + startId);
+        Bundle bundle = intent.getExtras();
+        if (bundle != null) &#123;
+            Control control = (Control) bundle.getSerializable(&quot;Key&quot;);
+            if (control != null) &#123;
+                switch (control) &#123;
+                    case PLAY:
+                        play();
+                        break;
+                    case PAUSE:
+                        pause();
+                        break;
+                    case STOP:
+                        stop();
+                        break;
+                &#125;
+            &#125;
+        &#125;
+        return super.onStartCommand(intent, flags, startId);
+    &#125;
+
+    @Override
+    public void onDestroy() &#123;
+        Log.e(TAG, &quot;onDestroy&quot;);
+        if (mediaPlayer != null) &#123;
+            mediaPlayer.stop();
+            mediaPlayer.release();
+        &#125;
+        super.onDestroy();
+    &#125;
+
+    private void play() &#123;
+        if (!mediaPlayer.isPlaying()) &#123;
+            mediaPlayer.start();
+        &#125;
+    &#125;
+
+    private void pause() &#123;
+        if (mediaPlayer != null &amp;&amp; mediaPlayer.isPlaying()) &#123;
+            mediaPlayer.pause();
+        &#125;
+    &#125;
+
+    private void stop() &#123;
+        if (mediaPlayer != null) &#123;
+            mediaPlayer.stop();
+        &#125;
+        stopSelf(startId);
+    &#125;
+
+    @Override
+    public IBinder onBind(Intent intent) &#123;
+        Log.e(TAG, &quot;onBind&quot;);
+        throw new UnsupportedOperationException(&quot;Not yet implemented&quot;);
+    &#125;
+
+&#125;
+</code></pre>
+<p>用destory停掉servey</p>
+<p>onbaild</p>
+<p>2.可交互的后台服务是指前台页面可以调用后台服务的方法，通过bindService()方式开启。Service的生命周期很简单，分别为onCreate、onBind、onUnBind、onDestroy这四个。<img src="https://img-blog.csdnimg.cn/20191006164507445.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI5OTY2MjAz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h1 id="ContentProvider"><a href="#ContentProvider" class="headerlink" title="ContentProvider"></a>ContentProvider</h1><h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>ContentProvider主要用于在不同的应用程序之间实现<strong>数据共享</strong>的功能。<br>ContentProvider&#x3D;中间者角色（搬运工），真正存储&amp;操作数据的数据源为原来存储数据的方式（数据库（sqlite）、文件、XML、网络等等）</p>
+<p>（1）对底层数据库的抽象<br>对数据进行封装，提供统一的接口。使用者不必关心数据来源。当项目改变数据来源时,不会对使用代码产生影响。<br>（2）提供一种跨进程数据共享方式<br>数据在多个应用程序中共享，当一个应用程序改变共享数据时候，去通知其他应用程序共享数据被修改了，使得它们可以相应地执行一些处理。<br>（3）用安全的方式对数据进行封装</p>
+<p><img src="https://img-blog.csdnimg.cn/20190920144925801.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI5OTY2MjAz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h2 id="使用原理："><a href="#使用原理：" class="headerlink" title="使用原理："></a>使用原理：</h2><p>1.内容提供者是一种跨应用访问数据库的方式。一个应用可以通过内容提供者将自己的私有数据暴露出来，其他应用通过内容解析者对数据进行增删改查等操作。<br>2.使用场景<br>由于ContentProvider是向其他应用暴露数据库接口，不能保证应用所定义的数据库的安全性。因此往往不用于自定义数据库。适用于获取系统数据库的接口，如短信数据库、联系人数据库。</p>
+<p><strong>3.实例</strong></p>
+<p>自定义Sqlite数据库<br>（1）创建数据库类 集成SQLiteOpenHelper</p>
+<pre><code>public class DBHelper extends SQLiteOpenHelper &#123;
+
+    // 数据库名
+    private static final String DATABASE_NAME = &quot;finch.db&quot;;
+
+    // 表名
+    public static final String USER_TABLE_NAME = &quot;user&quot;;
+    public static final String JOB_TABLE_NAME = &quot;job&quot;;
+
+    private static final int DATABASE_VERSION = 1;
+    //数据库版本号
+
+    public DBHelper(Context context) &#123;
+        super(context, DATABASE_NAME, null, DATABASE_VERSION);
+    &#125;
+
+    @Override
+    public void onCreate(SQLiteDatabase db) &#123;
+
+        // 创建两个表格:用户表 和职业表
+        db.execSQL(&quot;CREATE TABLE IF NOT EXISTS &quot; + USER_TABLE_NAME + &quot;(_id INTEGER PRIMARY KEY AUTOINCREMENT,&quot; + &quot; name TEXT)&quot;);
+        db.execSQL(&quot;CREATE TABLE IF NOT EXISTS &quot; + JOB_TABLE_NAME + &quot;(_id INTEGER PRIMARY KEY AUTOINCREMENT,&quot; + &quot; job TEXT)&quot;);
+    &#125;
+
+    @Override
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)   &#123;
+
+    &#125;
+&#125;
+</code></pre>
+<p>（2）自定义ContentProvider 子类，继承自ContentProvider。并在清单文件中配置内容提供者<br>MyProvider.java</p>
+<pre><code>public class MyProvider extends ContentProvider &#123;
+
+    private Context mContext;
+    DBHelper mDbHelper = null;
+    SQLiteDatabase db = null;
+    // 设置ContentProvider的唯一标识，与清单文件 android:authority对应
+    public static final String AUTHORITY = &quot;cn.scu.myprovider&quot;;
+
+    public static final int User_Code = 1;
+    public static final int Job_Code = 2;
+
+    // UriMatcher类 路径匹配器:在ContentProvider 中注册URI
+    private static final UriMatcher mMatcher;
+    static&#123;
+        mMatcher = new UriMatcher(UriMatcher.NO_MATCH);
+        // 初始化
+        mMatcher.addURI(AUTOHORITY,&quot;user&quot;, User_Code);
+        mMatcher.addURI(AUTOHORITY, &quot;job&quot;, Job_Code);
+        // 若URI资源路径 = content://cn.scu.myprovider/user ，则返回注册码User_Code
+        // 若URI资源路径 = content://cn.scu.myprovider/job ，则返回注册码Job_Code
+    &#125;
+
+    // 以下是ContentProvider的6个方法
+    @Override
+    public boolean onCreate() &#123;
+
+        mContext = getContext();
+        // 在ContentProvider创建时对数据库进行初始化
+        // 运行在主线程，故不能做耗时操作,此处仅作展示
+        // 因为实现对数据库的增删改查操作，因此操作数据必须获得SQLiteDatabase对象
+        mDbHelper = new DBHelper(getContext());
+        db = mDbHelper.getWritableDatabase();
+
+        // 初始化两个表的数据(先清空两个表,再各加入一个记录)
+        db.execSQL(&quot;delete from user&quot;);
+        db.execSQL(&quot;insert into user values(1,&#39;Carson&#39;);&quot;);
+        db.execSQL(&quot;insert into user values(2,&#39;Kobe&#39;);&quot;);
+
+        db.execSQL(&quot;delete from job&quot;);
+        db.execSQL(&quot;insert into job values(1,&#39;Android&#39;);&quot;);
+        db.execSQL(&quot;insert into job values(2,&#39;iOS&#39;);&quot;);
+
+        return true;
+    &#125;
+
+    @Override
+    public Uri insert(Uri uri, ContentValues values) &#123;
+        // 根据URI匹配 URI_CODE，从而匹配ContentProvider中相应的表名
+        String table = getTableName(uri);
+        // 向该表添加数据，返回值代表插入的行数 index
+        db.insert(table, null, values);
+        // 当该URI的ContentProvider数据发生变化时，通知外界（即访问该ContentProvider数据的访问者）
+        mContext.getContentResolver().notifyChange(uri, null);
+        return uri;
+        &#125;
+
+    @Override
+    public Cursor query(Uri uri, String[] projection, String selection,
+                        String[] selectionArgs, String sortOrder) &#123;
+        // 根据URI匹配 URI_CODE，从而匹配ContentProvider中相应的表名
+        String table = getTableName(uri);
+        // 查询数据（即实现对数据库的查询操作）这里cursor不能关闭
+        Cursor cursor = db.query(table,projection,selection,selectionArgs,null,null,sortOrder,null);
+        return cursor;
+    &#125;
+    
+    @Override
+    public int update(Uri uri, ContentValues values, String selection,
+                      String[] selectionArgs) &#123;
+        // 更新操作，返回值代表影响的行数
+        int updRows = db.update(table, values, selection, selectionArgs);
+        return updRows;
+    &#125;
+    
+    @Override
+    public int delete(Uri uri, String selection, String[] selectionArgs) &#123;
+        // 删除操作，返回值代表影响的行数
+        int delRows = db.delete(table, selection, selectionArgs);
+        return delRows;
+    &#125;
+    
+    // 根据URI匹配 URI_CODE，从而匹配ContentProvider中相应的表名
+    private String getTableName(Uri uri)&#123;
+        String tableName = null;
+        switch (mMatcher.match(uri)) &#123;
+            case User_Code:
+                tableName = DBHelper.USER_TABLE_NAME;
+                break;
+            case Job_Code:
+                tableName = DBHelper.JOB_TABLE_NAME;
+                break;
+        &#125;
+        return tableName;
+        &#125;
+    &#125;
+</code></pre>
+<p>AndroidManifest.xml</p>
+<pre><code>&lt;provider android:name=&quot;MyProvider&quot;
+                android:authorities=&quot;cn.scu.myprovider&quot;/&gt;
+</code></pre>
+<p>（3）由于第一个应用的私有数据库已通过ContentProvider暴露，因此第二个应用可以使用内容解析者对数据进行操作</p>
+<pre><code>public class MainActivity extends AppCompatActivity &#123;
+@Override
+protected void onCreate(Bundle savedInstanceState) &#123;
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    // 设置URI，对user表进行操作（与定义的路径一致）
+    Uri uri_user = Uri.parse(&quot;content://cn.scu.myprovider/user&quot;);
+    // 插入表中数据 ContentValues
+    ContentValues values = new ContentValues();
+    values.put(&quot;_id&quot;, 3);
+    values.put(&quot;name&quot;, &quot;Iverson&quot;);
+    // 获取ContentResolver（直接通过上下文获取） &amp; 通过ContentResolver 根据URI 向ContentProvider中插入数据
+    ContentResolver resolver =  getContentResolver();
+    resolver.insert(uri_user,values);
+    // 通过ContentResolver 向ContentProvider中查询数据
+    Cursor cursor = resolver.query(uri_user, new String[]&#123;&quot;_id&quot;,&quot;name&quot;&#125;, null, null, null);
+    while (cursor.moveToNext())&#123;
+        System.out.println(&quot;query book:&quot; + cursor.getInt(0) +&quot; &quot;+ cursor.getString(1));
+        // 将表中数据全部输出
+    &#125;
+    cursor.close();
+    // 关闭游标
+
+    // 更改URI,对JOB表操作,从而匹配不同的URI CODE,从而找到不同的数据资源
+    Uri uri_job = Uri.parse(&quot;content://cn.scu.myprovider/job&quot;);
+    // 插入表中数据
+    ContentValues values2 = new ContentValues();
+    values2.put(&quot;_id&quot;, 3);
+    values2.put(&quot;job&quot;, &quot;NBA Player&quot;);
+
+    // 获取ContentResolver
+    ContentResolver resolver2 =  getContentResolver();
+    // 通过ContentResolver 根据URI 向ContentProvider中插入数据
+    resolver2.insert(uri_job,values2);
+    // 通过ContentResolver 向ContentProvider中查询数据
+    Cursor cursor2 = resolver2.query(uri_job, new String[]&#123;&quot;_id&quot;,&quot;job&quot;&#125;, null, null, null);
+    while (cursor2.moveToNext())&#123;
+        System.out.println(&quot;query job:&quot; + cursor2.getInt(0) +&quot; &quot;+ cursor2.getString(1));
+        // 将表中数据全部输出
+    &#125;
+    cursor2.close();
+    // 关闭游标
+</code></pre>
+<p><strong>系统短信数据库</strong><br>系统短信目录位于com.android.provider.telephony内的mmssms.db（Provider 管理的私有数据库包括 com.android.provider.* 如applications、calendar、downloads等等）<br>权限 -rw-rw—- 对一般用户不可读不可写不可执行（完全私有）&#x3D;&gt; 通过ContentProvider 暴露接口。</p>
+<p>linux 文件访问权限<br>Linux的文件访问权限分为 读、写、执行三种：<br>drwxr-xr-x意思如下：<br>第一位表示文件类型：<br>d是目录文件，l是链接文件，-是普通文件，p是管道。<br>后面分为三个三位来看，分别表示不同用户的权限：<br>第一个 rwx： root ：r 是可读，w 是可写，x 是可执行，rwx 意思是可读可写可执行。<br>第二个 r-x： 一般用户（用户组）：r-x 是可读可执行不可写。<br>第三个 r-x： 其他用户，r-x 是可读可执行不可写。<br>综合起来就是权限设置为：文件所有者（root）可读可写可执行，与文件所有者同属一个用户组的其他用户可读可执行，其它用户组可读可执行。</p>
+<p><img src="https://img-blog.csdnimg.cn/20191017135300608.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI5OTY2MjAz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<pre><code>public void click(View v)&#123;
+    // 由于短信数据库 系统通过ContentProvider 将接口暴露出来，因此可以直接通过ContentResolver 操作数据（SmsProvider extends ContentProvider 系统上层应用源码）
+    Uri uri = Uri.parse(&quot;content://sms/&quot;);
+    // 1. 往短信数据库里插入一条数据
+    ContentValues values = new ContentValues();
+    values.put(&quot;address&quot;,&quot;95555&quot;);
+    values.put(&quot;body&quot;,&quot;您的余额为 0.00 元&quot;);
+    values.put(&quot;data&quot;,System.currentTimeMillis());
+    getContentResolver().insert(uri,values);
+    // 2. 查询短信数据内容
+    Cursor cursor = getContentResolver().query(uri,new String[]&#123;&quot;address&quot;,&quot;data&quot;,&quot;body&quot;&#125;,null,null,null);
+    while (cursor.moveToNext())&#123;
+            System.out.println(&quot;result:&quot; + cursor.getString(0) +&quot; &quot;+ cursor.getString(1) + &quot; &quot; + cursor.getString(2));
+&#125;
+</code></pre>
+<p>记得申请权限</p>
+<pre><code class="html">[&lt;uses-permission android:name=&quot;android.permission.WRITE_SMS&quot; /&gt;
+&lt;uses-permission android:name=&quot;android.permission.READ_SMS&quot; /&gt;]()
+</code></pre>
+<h2 id="uri统一资源标识符"><a href="#uri统一资源标识符" class="headerlink" title="uri统一资源标识符"></a>uri统一资源标识符</h2><p><img src="/.com//Users\white\AppData\Roaming\Typora\typora-user-images\image-20221031210749005.png" alt="image-20221031210749005"></p>
+<p><img src="/.com//Users\white\AppData\Roaming\Typora\typora-user-images\image-20221031211427311.png" alt="image-20221031211427311"></p>
+<h1 id="广播接收者BroadcastReceiver"><a href="#广播接收者BroadcastReceiver" class="headerlink" title="广播接收者BroadcastReceiver"></a>广播接收者BroadcastReceiver</h1><p>你玩游戏的时候收到了短信，你要做什么操作，这就是广播的用途</p>
+<p><img src="https://img-blog.csdnimg.cn/20191010193702122.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI5OTY2MjAz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<ol>
+<li>发送广播<br>开发者自定义intent广播并发送</li>
+</ol>
+<pre><code class="java">Intent intent = new Intent();
+// 广播通过 意图（Intent） 标识
+// 对应BroadcastReceiver中intentFilter的action，只有action相同的广播接受者才能收到广播
+intent.setAction(BROADCAST_ACTION);
+// 发送广播
+sendBroadcast(intent);
+123456
+</code></pre>
+<ol>
+<li>接收广播</li>
+</ol>
+<ul>
+<li><strong>静态&#x2F;动态注册广播接收器</strong><br>静态注册——在AndroidManifest.xml里通过标签声明</li>
+</ul>
+<pre><code class="xml">    //此广播接收者类是mBroadcastReceiver
+&lt;receiver 
+    android:name=&quot;.mBroadcastReceiver&quot; &gt;
+    //用于指定此广播接收器将接收的广播类型
+    //本示例中给出的是用于接收网络状态改变时发出的广播
+    &lt;intent-filter&gt;
+        &lt;action android:name=&quot;android.net.conn.CONNECTIVITY_CHANGE&quot; /&gt;
+    &lt;/intent-filter&gt;
+&lt;/receiver&gt;
+</code></pre>
+<p>不在onCreate() &amp; onDestory() 或 onStart() &amp; onStop()注册、注销是因为：<br>当系统因为内存不足（优先级更高的应用需要内存，请看上图红框）要回收Activity占用的资源时，Activity在执行完onPause()方法后就会被销毁，有些生命周期方法onStop()，onDestory()就不会执行。当再回到此Activity时，是从onCreate方法开始执行。<br>假设我们将广播的注销放在onStop()，onDestory()方法里的话，有可能在Activity被销毁后还未执行onStop()，onDestory()方法，即广播仍还未注销，从而导致内存泄露。<br>但是，onPause()一定会被执行，从而保证了广播在App死亡前一定会被注销，从而防止内存泄露</p>
+<p>编写广播接收者类Receiver</p>
+<pre><code class="css">public class Receiver extends BroadcastReceiver&#123;
+
+    @Override
+    public void onReceive (Context context,Intent intent)&#123;
+        System.out.println(&quot;Received&quot;);
+&#125;
+&#125;
+</code></pre>
+<p><strong>onReceive</strong>()方法是对接收匹配的广播的处理操作，只是一个文本操作，提示我已经收到广播信号</p>
+<p><img src="/.com//Users\white\AppData\Roaming\Typora\typora-user-images\image-20221030222301602.png" alt="image-20221030222301602"></p>
+<p> <strong>intent</strong></p>
+<p>getSystemService来获取</p>
+<h1 id="context"><a href="#context" class="headerlink" title="context"></a>context</h1><p>Android应用模型是基于组件的应用设计模式，组件的运行要有一个完整的Android工程环境，Context是维持Android程序中各组件（Activity、Service等）能够正常工作的一个核心功能类。</p>
+<p><img src="https://img-blog.csdnimg.cn/20190921140457661.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI5OTY2MjAz,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><strong>不同种类Context的区别</strong></p>
+<table>
+<thead>
+<tr>
+<th>Context类型</th>
+<th>Activity Context</th>
+<th>Application（Service） Context</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>父类不同</td>
+<td>ContextThemeWrapper（Activity相对于Application增加了UI界面的处理，如弹出Dialog）</td>
+<td>ContextWrapper</td>
+</tr>
+<tr>
+<td>数量不同</td>
+<td>多个（Activity Context则随Activity启动而创建）</td>
+<td>一个（Application Context随Application启动而创建）</td>
+</tr>
+<tr>
+<td>生命周期不同</td>
+<td>与Activity相关.故对于生命周期较长的对象应引用Application的Context防止内存泄露。</td>
+<td>与Application相关，随应用程序销毁而销毁</td>
+</tr>
+<tr>
+<td>作用域不同</td>
+<td>Activity所持用的Context作用域最广，无所不能（继承自ContextThemeWrapper，在ContextWrapper基础上增加了主题操作）</td>
+<td>不适用于UI相关的操作，如Start an Activity或Layout Inflate</td>
+</tr>
+<tr>
+<td>获取方式不同</td>
+<td>View.getContext()&#x2F;Activity.this</td>
+<td>Activity.getApplicationContext()</td>
+</tr>
+</tbody></table>
+<h1 id="intent"><a href="#intent" class="headerlink" title="intent"></a>intent</h1><p>Intent表示目的、意图。Android通过Intent协助应用间，或应用内部组件（Activity,Service和Broadcast Receiver）间交互与通讯。用户可以通过Intent向Android组件发出一个意图，Intent负责对这个意图的动作、附加数据等进行描述。Android根据Intent的描述找到对应的组件，将Intent传入并完成组件的调用。</p>
+<h2 id="Intent作用"><a href="#Intent作用" class="headerlink" title="Intent作用:"></a>Intent作用:</h2><h3 id="指定当前组件要完成的动作"><a href="#指定当前组件要完成的动作" class="headerlink" title="指定当前组件要完成的动作"></a>指定当前组件要完成的动作</h3><p>根据intent寻找目标组件的方式分成两类</p>
+<h4 id="1-隐式意图"><a href="#1-隐式意图" class="headerlink" title="1.隐式意图"></a>1.隐式意图</h4><p>通过在指定需启动组件所需满足的条件<br>（1）在AndroidManifest.xml清单文件中配置启动目标组件的条件<br>通过 AndroidManifest.xml文件下的&lt;组件类型&gt;（如&lt; Activity &gt;&lt; Service &gt; &lt; BroadcastReceiver &gt;）标签下的&lt; intent -filter &gt; 声明 需 匹配的条件，声明条件含：动作（Action）、类型（Category）、数据（Data）</p>
+<pre><code class="html">// 为使SecondActivity能继续响应该Intent
+// 我们需在AndroidManifest.xml文件下的&lt;Activity&gt;标签下配置&lt;intent -filter&gt;的内容
+&lt;activity android:name=&quot;com.test.SecondActivity&quot;&gt;
+&lt;intent-filter &gt;
+      &lt;action android:name=&quot;android.intent.action.ALL_APPS&quot;/&gt;
+          &lt;category android:name=&quot;android.intent.category.DEFAULT&quot;/&gt;
+                &lt;category android:name=&quot;com.example.intent_test.MY_CATEGORY&quot;/&gt;
+            &lt;/intent-filter&gt;
+&lt;/activity&gt;
+</code></pre>
+<p>（2）在Activity中发起意图</p>
+<pre><code class="java">// 使FirstActivity启动SecondActivity（通过按钮）
+      mybutton.setOnClickListener(new OnClickListener() &#123;
+    @Override
+    public void onClick(View v) &#123;
+        // 1. 实例化1个隐式Intent对象
+        Intent intent = new Intent();
+        // 2. 指定action参数
+        intent.setAction(&quot;android.intent.action.ALL_APPS&quot;);
+        // 3. 调用Intent中的addCategory（）来添加一个category
+        // 注：每个Intent中只能指定1个action，但却能指定多个category
+          intent.addCategory(&quot;com.example.intent_test.MY_CATEGORY&quot;);
+        startActivity (intent);
+    &#125;
+&#125;);
+</code></pre>
+<h4 id="显式意图"><a href="#显式意图" class="headerlink" title="显式意图"></a>显式意图</h4><p>通过明确指定组件名<br>明确指定组件名的方式：调用Intent的构造方法、Intent.setComponent（）、Intent.setClass（）<br>通过 AndroidManifest.xml文件下的&lt;组件类型 android:name&#x3D;“组件名”&gt;</p>
+<pre><code>// 使FirstActivity启动SecondActivity（通过按钮）
+mybutton.setOnClickListener(new OnClickListener() &#123;
+
+    @Override
+    public void onClick(View v) &#123;
+    // 1. 实例化显式Intent &amp; 通过构造函数接收2个参数
+    // new Intent(Context packageContext, Class&lt;?&gt; cls) ;
+    // 参数1 = packageContext：启动活动的上下文，一般为当前Activity
+    // 参数2 = cls：是指定要启动的目标活动
+      Intent intent = new Intent(FirstActivity.this,SecondActivity.class);
+    // 通过setClassName(String className) 指明类名
+       // intent.setClassName(&quot;com.test.SecondActivity&quot;);
+    
+    // 2. 通过Activity类的startActivity（）执行该意图操作（接收一个Intent对象）
+    // 将构建好的Intent对象传入该方法就可启动目标Activity
+      startActivity (intent);
+    &#125;
+&#125;);
+</code></pre>
+<ol>
+<li>Intent 常见使用场景</li>
+</ol>
+<ul>
+<li><p>启动页面（Context.startActivity() 、Activity.startActivityForResult()）<br>启动服务（ Context.startService() 、Context.bindService() ）</p>
+</li>
+<li><p>启动广播（ Context.sendBroadcast()、Context.sendOrderedBroadcast()）</p>
+<p>监听系统广播</p>
+</li>
+</ul>
+<p>​	传递数据</p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">💰</a>
+</p>
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Yelog
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>Help us with donation</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">alipay</label></span><span><label><input type="radio" name="pay" value="weixin">weixin</label></span>
+    </div>
+</div>
+
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("https://s1.ax1x.com/2022/11/02/xHULKe.png");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
