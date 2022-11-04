@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>eclipse使用 | White</title>
+  <title>android | White</title>
   <meta name="keywords" content="">
-  <meta name="description" content="eclipse使用 | White">
+  <meta name="description" content="android | White">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="APK文件结构 src目录：包含项目中所有的.java源文件，默认情况下，它包括一个 MainActivity.java源文件对应的活动类，当应用程序通过应用图标启动时，将运行它。  gen目录：只关注R.java文件，我们平时使用资源也是通过R文件来调用的，不能更改  bin目录： 这个文件夹包含Android由APT构建的.apk包文件，以及运行Android应用程序所需要的其他所有东西。">
 <meta property="og:type" content="article">
@@ -405,9 +405,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-2222" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-android" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">eclipse使用</h1>
+        <h1 class="article-title">android</h1>
     
     <div class="article-meta">
         
@@ -417,7 +417,7 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2022-11-04 15:33:00'>2022-11-04 15:28</time>
+            Created At : <time class="date" title='Updated At: 2022-11-04 17:46:05'>2022-11-04 17:45</time>
         
     </div>
     <div class="article-meta">
@@ -439,7 +439,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Eclipse%E5%9F%BA%E6%9C%AC%E6%A6%82%E8%BF%B0%EF%BC%9A"><span class="toc-text">Eclipse基本概述：</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Eclipse%E5%88%9B%E5%BB%BAJava%E6%96%87%E4%BB%B6"><span class="toc-text">Eclipse创建Java文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E6%9F%A5%E7%9C%8B%E6%BA%90%E7%A0%81"><span class="toc-text">四、查看源码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AD%A5%E9%AA%A4%E4%B8%80"><span class="toc-text">步骤一</span></a></li></ol></li></ol>
+        
     
 <style>
     .left-col .switch-btn,
@@ -455,47 +455,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Eclipse基本概述："><a href="#Eclipse基本概述：" class="headerlink" title="Eclipse基本概述："></a>Eclipse基本概述：</h1><p>工作区（workspace） 工作区是一个目录，程序和程序所需要用到的资源都在workspace里，中间缓存文件也存在工作区中。安装的时候选择好工作区 项目（Project） 为一个需求所服务的代码文件，一个workspace 可以拥有个项目，而你的代码必须有归属于某个项目的，不能单独存在。</p>
-<h2 id="Eclipse创建Java文件"><a href="#Eclipse创建Java文件" class="headerlink" title="Eclipse创建Java文件"></a><strong>Eclipse创建Java文件</strong></h2><p><strong>●创建项目</strong></p>
-<p><strong>1、File-New-Project</strong><img src="https://pic1.zhimg.com/80/v2-5f7542885bf672306513f76b36babbac_720w.webp" alt="img"></p>
-<p><strong>2、点击Java Project，然后Next</strong><img src="https://pic4.zhimg.com/80/v2-8a456e40f9fd2fbc81dd444124a94063_720w.webp" alt="img"></p>
-<p><strong>3、编辑项目名称点击Finish</strong></p>
-<p><img src="https://pic1.zhimg.com/80/v2-742172fd0c95bc83a92596c6d2752850_720w.webp" alt="img"><img src="https://pic4.zhimg.com/80/v2-9b2d8835eb993f16b8d2d4c9914fcd67_720w.webp" alt="img"></p>
-<p><strong>●在项目下创建包和类</strong></p>
-<p><strong>&gt;</strong>&gt;&gt;&gt;<strong>分步创建包和</strong></p>
-<p><img src="https://pic2.zhimg.com/80/v2-963c44c01102427de421f8338e352bc1_720w.webp" alt="img"><img src="https://pic3.zhimg.com/80/v2-03f1d047b216531a122aeeb83384eb56_720w.webp" alt="img"></p>
-<p>包创建成功</p>
-<p><img src="https://pic2.zhimg.com/80/v2-b645d4d0c67093b31da95c6c95ee2cc1_720w.webp" alt="img"></p>
-<p>在包那里单击右键New-Class创建类</p>
-<p><img src="https://pic4.zhimg.com/80/v2-d440e511d8c8a559298dc0ad39aae053_720w.webp" alt="img"></p>
-<p>编辑类名-Finish</p>
-<p><img src="https://pic3.zhimg.com/80/v2-3ecbcec750a73f9f8507448051241fca_720w.webp" alt="img"></p>
-<p>创建成功，源程序文件名与创建的类名相同Test.java，编译器会给出类的主体部分</p>
-<p><img src="https://pic4.zhimg.com/80/v2-75c1aeb43cab77cce1115784c85b92ef_720w.webp" alt="img"></p>
-<p><strong>&gt;</strong>&gt;&gt;&gt;<strong>直接一步创建类和包</strong></p>
-<p><img src="https://pic2.zhimg.com/80/v2-127f196cd27f1070581b2a1690d0dee5_720w.webp" alt="img"></p>
-<p><img src="https://pic4.zhimg.com/80/v2-10d4e44efdcfa87f695c99dd026b34ef_720w.webp" alt="img"></p>
-<p><img src="https://pic4.zhimg.com/80/v2-9e39aa918da177ad431daa7d9f59b497_720w.webp" alt="img"></p>
-<p><strong>●编译</strong><img src="https://pic2.zhimg.com/80/v2-5322c905363234a4ad423851ea09cd49_720w.webp" alt="img"></p>
-<p><img src="https://pic3.zhimg.com/80/v2-3543b0b47307f840cb1c35a7f741ffba_720w.webp" alt="img"></p>
-<p><img src="https://pic3.zhimg.com/80/v2-87cc4b232cf8c27cd00d4e0791ddb76a_720w.webp" alt="img"><img src="https://pic4.zhimg.com/80/v2-4215994e3d134ab0f40f1d1cdfe3159b_720w.webp" alt="img"></p>
-<p><img src="https://pic4.zhimg.com/80/v2-0464915634abb36466ab97d1560c8387_720w.webp" alt="img"></p>
-<p><img src="https://pic1.zhimg.com/80/v2-288e6bed59c263100e50ced4d8d3a8a0_720w.webp" alt="img"></p>
-<p><strong>字节码文件和源程序文件存储</strong></p>
-<p><img src="https://pic2.zhimg.com/80/v2-014e753edd47193c32b08d8119d54e1d_720w.webp" alt="img"></p>
-<p><img src="https://pic4.zhimg.com/80/v2-ea70bd12c7a4dbe4446eccebf03bbbf7_720w.webp" alt="img"><strong>常用操作（删除更名)，在对应包、类、文件等鼠标右击</strong></p>
-<p><img src="https://pic3.zhimg.com/80/v2-607c456ccabb4a0be557af00246e8eae_720w.webp" alt="img"></p>
-<h2 id="四、查看源码"><a href="#四、查看源码" class="headerlink" title="四、查看源码"></a><strong>四、查看源码</strong></h2><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a><strong>准备工作</strong></h2><h2 id="步骤一"><a href="#步骤一" class="headerlink" title="步骤一"></a>步骤一</h2><p><img src="https://pic1.zhimg.com/80/v2-29158bb7bc736458318dfa2af05842b0_720w.webp" alt="img"></p>
-<p>步骤二</p>
-<p><img src="https://pic1.zhimg.com/80/v2-4037eaa05f7152e5b625044c590dab7c_720w.webp" alt="img"></p>
-<p>步骤三</p>
-<p><img src="https://pic1.zhimg.com/80/v2-a254d21bbd96f5d6679c8768ca804ae0_720w.webp" alt="img"></p>
-<p>步骤四</p>
-<p><img src="https://pic2.zhimg.com/80/v2-ad070ab2f8c3a2dc07c1cf5dcc5a6da5_720w.webp" alt="img"></p>
-<p>完成上述准备工作后，查看源码最快捷方式，按住键盘ctrl键鼠标选择你想要查看源码的类或者方法名即可。或者选中对应方法或类，鼠标置于其上点击查看<br><strong>&gt;</strong>&gt;&gt;&gt;例</p>
-<p><img src="https://pic3.zhimg.com/80/v2-611dd8c99749cabb134387a2c7cef602_720w.webp" alt="img"></p>
-<p><img src="https://pic2.zhimg.com/80/v2-db1cf59af1ad1ac6948ad656bbb1262d_720w.webp" alt="img"></p>
-<p>若要查看API，首先准备好网页版的API，然后按照上面的步骤三开始导入。感觉感慨是这个一般不太用。<br>【上面这些介绍是一些基本的操作，Eclipes的功能其实很强大，自己可以平时去大胆尝试，有问题了随时网上咨询，将编译器的最大化的利用】</p>
+        <p>22252222</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
