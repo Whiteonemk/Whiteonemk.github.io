@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>加密算法 | White</title>
+  <title>爱心代码 | White</title>
   <meta name="keywords" content="">
-  <meta name="description" content="加密算法 | White">
+  <meta name="description" content="爱心代码 | White">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="hz 哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈">
 <meta property="og:type" content="article">
@@ -471,29 +471,19 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-加密算法" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-爱心代码" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">加密算法</h1>
+        <h1 class="article-title">爱心代码</h1>
     
     <div class="article-meta">
         
         
-        
-        <span class="book">
-            <i class="iconfont icon-category"></i>
-            
-            
-            <a  data-rel="安卓逆向">安卓逆向</a> > 
-            
-            <a  data-rel="安卓逆向&lt;---&gt;入门手册">入门手册</a>
-            
-        </span>
         
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2022-11-07 20:08:29'>2022-11-04 17:52</time>
+            Created At : <time class="date" title='Updated At: 2022-11-09 23:21:31'>2022-11-09 23:21</time>
         
     </div>
     <div class="article-meta">
@@ -515,7 +505,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text"></span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86"><span class="toc-text">对称加密</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%8D%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86"><span class="toc-text">不对称加密</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#xor"><span class="toc-text">xor</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E6%A6%82%E5%BF%B5"><span class="toc-text">一.概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E8%A7%84%E5%88%99%EF%BC%9A"><span class="toc-text">逻辑运算规则：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81-XOR-%E7%9A%84%E5%BA%94%E7%94%A8"><span class="toc-text">二、 XOR 的应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%8A%A0%E5%AF%86%E5%BA%94%E7%94%A8"><span class="toc-text">三、加密应用</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AF%B9%E4%BA%8E%E5%85%AC%E5%BC%8Fmath-floor-math-random-max-min-1-min%E7%9A%84%E8%87%AA%E6%88%91%E7%90%86%E8%A7%A3%E3%80%82"><span class="toc-text">对于公式math.floor(math.random() * (max - min + 1)) + min的自我理解。</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%8A%A0%E5%AF%86"><span class="toc-text">对字符串加密</span></a></li></ol></li></ol></li></ol>
+        
     
 <style>
     .left-col .switch-btn,
@@ -531,97 +521,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id><a href="#" class="headerlink" title></a></h1><p>分类的标准：秘钥的分发</p>
-<h1 id="对称加密"><a href="#对称加密" class="headerlink" title="对称加密"></a>对称加密</h1><p><a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E5%8A%A0%E5%AF%86&spm=1001.2101.3001.7020">加密</a>和解密使用同一个秘钥（私钥）</p>
-<h1 id="不对称加密"><a href="#不对称加密" class="headerlink" title="不对称加密"></a>不对称加密</h1><p>一把作为公开的公钥，另一把作为私钥。公钥加密的信息，只有私钥才能解密。私钥加密的信息，只有公钥才能解密。</p>
-<h1 id="xor"><a href="#xor" class="headerlink" title="xor"></a>xor</h1><h2 id="一-概念"><a href="#一-概念" class="headerlink" title="一.概念"></a>一.概念</h2><p>yy</p>
-<p>1 ^ 1 &#x2F;&#x2F; 0<br>0 ^ 0 &#x2F;&#x2F; 0<br>1 ^ 0 &#x2F;&#x2F; 1<br>0 ^ 1 &#x2F;&#x2F; 1</p>
-<h3 id="逻辑运算规则："><a href="#逻辑运算规则：" class="headerlink" title="逻辑运算规则："></a>逻辑运算规则：</h3><p><img src="/.com//Users\white\AppData\Roaming\Typora\typora-user-images\image-20221106201624354.png" alt="image-20221106201624354"></p>
-<p><img src="/.com//Users\white\AppData\Roaming\Typora\typora-user-images\image-20221106201744087.png" alt="image-20221106201744087"></p>
-<p><img src="/.com//Users\white\AppData\Roaming\Typora\typora-user-images\image-20221106202651325.png" alt="image-20221106202651325"></p>
-<h2 id="二、-XOR-的应用"><a href="#二、-XOR-的应用" class="headerlink" title="二、 XOR 的应用"></a>二、 XOR 的应用</h2><p>XOR 运算有一个很奇妙的特点：如果对一个值连续做两次 XOR，会返回这个值本身。<br>&#x2F;&#x2F; 第一次 XOR<br>1010 ^ 1111 &#x2F;&#x2F; 0101</p>
-<p>&#x2F;&#x2F; 第二次 XOR<br>0101 ^ 1111 &#x2F;&#x2F; 1010</p>
-<h2 id="三、加密应用"><a href="#三、加密应用" class="headerlink" title="三、加密应用"></a>三、加密应用</h2><p>XOR 的这个特点，使得它可以用于信息的加密。<br>message XOR key &#x2F;&#x2F; cipherText<br>cipherText XOR key &#x2F;&#x2F; message</p>
-<p>上面代码中，原始信息是message，密钥是key，第一次 XOR 会得到加密文本cipherText。对方拿到以后，再用key做一次 XOR 运算，就会还原得到message。</p>
-<p><img src="https://img-blog.csdn.net/20170609143455371?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZ2V0X0w=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="图片描述"></p>
-<p>key的长度大于等于message<br>key必须是一次性的，且每次都要随机产生</p>
-<p>理由很简单，如果每次的key都是随机的，那么产生的CipherText具有所有可能的值，而且是均匀分布，无法从CipherText看出message的任何特征。也就是说，它具有最大的”信息熵”，因此完全不可能破解。这被称为 XOR 的”完美保密性”（perfect secrecy）。</p>
-<p>满足上面两个条件的key，叫做 one-time pad（缩写为OTP），意思是”一次性密码本”，因为以前这样的key都是印刷成密码本，每次使用的时候，必须从其中挑选key。</p>
-<p><img src="/.com//Users\white\AppData\Roaming\Typora\typora-user-images\image-20221105195553068.png" alt="image-20221105195553068"></p>
-<p><img src="/.com//Users\white\AppData\Roaming\Typora\typora-user-images\image-20221105195638578.png" alt="image-20221105195638578"></p>
-<p>static静态变量</p>
-<p>File inFile文件流</p>
-<p>G</p>
-<p>加密&#x2F;解密的处理的目标数据是二进制数据，与是什么文无关，不是对字符串异或加密（是对二进制）</p>
-<p>字符串 转为 字节，字节 转为 字符串，<strong>必须使用相同的字符集编码格式</strong></p>
-<pre><code>public static void main(String[] args) throws Exception &#123;
-      String content = &quot;Hello world! 你好，世界！&quot;;       *// 原文内容*
-3. ​  String key = &quot;123456&quot;;                          *// XOR 加密/解密用的原始密码*
-4.  
-5. ​    *// 加密数据, 返回密文*
-6. ​    byte[] cipherBytes = XORUtils.encrypt(content.getBytes(&quot;utf-8&quot;), key.getBytes(&quot;utf-8&quot;));
-7.  
-8. ​    *// 解密数据, 返回明文*
-9. ​    byte[] plainBytes = XORUtils.encrypt(cipherBytes, key.getBytes(&quot;utf-8&quot;));
-10.  
-11. ​    *// 输出解密后的明文: &quot;Hello world! 你好，世界！&quot;*
-12. ​    String plainString = new String(plainBytes, &quot;utf-8&quot;);
-13. ​    System.out.println(plainString);
-14. &#125;
-
-</code></pre>
-<h5 id="对于公式math-floor-math-random-max-min-1-min的自我理解。"><a href="#对于公式math-floor-math-random-max-min-1-min的自我理解。" class="headerlink" title="对于公式math.floor(math.random() * (max - min + 1)) + min的自我理解。"></a><strong>对于公式math.floor(math.random() * (max - min + 1)) + min的自我理解。</strong></h5><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_37220666/article/details/120687542?spm=1001.2101.3001.6661.1&utm_medium=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1-120687542-blog-107180204.pc_relevant_3mothn_strategy_recovery&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2~default~CTRLIST~Rate-1-120687542-blog-107180204.pc_relevant_3mothn_strategy_recovery&utm_relevant_index=1">(4条消息) 对于公式math.floor(math.random() * (max - min + 1)) + min的自我理解。_乐乐学web之路的博客-CSDN博客_math.random()*(max-min+1)</a></p>
-<p>1首先math.random() 意思是取一个随机值，这个值大于等于0小于1</p>
-<p>2(math.random() * (max - min + 1))的意思就是随机取一个大于等于0小于(max-min+1)的值，为了方便理解，这里我们举例，</p>
-<p>令max&#x3D;10，min&#x3D;5,</p>
-<p>所以(math.random() * (max - min + 1))等同于(math.random() * (10 - 5 + 1))</p>
-<p>即math.random()*6，所取到的值即大于等于0小于6。</p>
-<p>又因为前面的math.floor意思为向下取整数值，</p>
-<p>所以math.floor(math.random() * (10 - 5 + 1))所取到的值就是大于等于0小于等于5，</p>
-<p>然后是具体的公式math.floor(math.random() * (max - min + 1)) + min</p>
-<p>后面还有一个+ min，即加上5，所以所取到的值就是5到10之间。</p>
-<h3 id="对字符串加密"><a href="#对字符串加密" class="headerlink" title="对字符串加密"></a>对字符串加密</h3><p>对helloworld加密</p>
-<pre><code>package com.xiets.xor;
-import java.io.File;
-public class Main &#123;
-    public static void main(String[] args) throws Exception &#123;
-        String content = &quot;Hello world!&quot;;     
-        String key = &quot;123456&quot;;              
-        byte[] cipherBytes = XORUtils.encrypt(content.getBytes(), key.getBytes());
-        byte[] plainBytes = XORUtils.encrypt(cipherBytes, key.getBytes());
-        System.out.println(new String(plainBytes));
-
-    &#125;
-</code></pre>
-<pre><code>public class SecurityUtil &#123;
-  //异或 实现加密与解密 存入和返回的都是字符串
-  public String Xor(String input)&#123;
-      char [] chs =input.toCharArray();
-      for(int i=0;i&lt;chs.length;i++)&#123;
-          chs[i]=(char)(chs[i]^3000);
-      &#125;
-      return new String(chs);
-  &#125;
-  public static void main(String[] args) &#123;
-      SecurityUtil securityUtil =new SecurityUtil();
-      String a =&quot;asdvfff&quot;;
-      String b= securityUtil.Xor(a);
-      System.out.println(b);
-      String c= securityUtil.Xor(b);
-      System.out.println(c);
-  &#125;
-
-&#125;
-</code></pre>
-<p>input不能与key直接进行异或操作，字符串不能参与数学计算      </p>
-<p>异或加密和解密用的方法都是同一个，<code>XORUtils</code>类中有两个公开静态方法：</p>
-<pre><code>// 加密/解密 byte 数组数据
-static byte[] encrypt(byte[] data, byte[] key)
-
-// 加密/解密 文件
-static void encryptFile(File inFile, File outFile, byte[] key)
-</code></pre>
-
+        
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
     </div>
